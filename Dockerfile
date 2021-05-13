@@ -3,6 +3,8 @@ RUN apk add python3 py-pip && \
 python3 -m ensurepip && \
 pip install --upgrade pip && \
 pip install flask
+ARG GIT_COMMIT=unspecified
+LABEL git_commit=$GIT_COMMIT
 
 ENV FLASK_APP app.py
 ENV PLATFORM 'Amazon EKS'
