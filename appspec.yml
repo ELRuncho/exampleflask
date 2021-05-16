@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:us-east-1:946392212876:task-definition/QADemoFlaskApp"
+        TaskDefinition: "arn:aws:ecs:us-east-1:946392212876:task-definition/QADemoFlaskApp" #test
         LoadBalancerInfo:
           ContanierName: "QAFlaskApp"
           ContainerPort: 5000
